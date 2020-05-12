@@ -1,5 +1,6 @@
 package bot;
 
+import javax.management.loading.PrivateMLet;
 import java.util.Scanner;
 
 public class SimpleBot {
@@ -10,7 +11,7 @@ public class SimpleBot {
         remindName();
         guessAge();
         count();
-        // ...
+        test();
         end();
     }
 
@@ -45,7 +46,23 @@ public class SimpleBot {
 
     static void test() {
         System.out.println("Let's test your programming knowledge.");
-        // write your code here
+        System.out.println("Why do we use methods?");
+        System.out.println("1. To repeat a statement multiple times.");
+        System.out.println("2. To decompose a program into several small subroutines.");
+        System.out.println("3. To determine the execution time of a program.");
+        System.out.println("4. To interrupt the execution of a program.");
+        int answer = scanner.nextInt();
+        if (answer == 2){
+            return;
+        }else {
+            while (answer != 2){
+                System.out.println("Please, try again.");
+                answer = scanner.nextInt();
+                if (answer == 2){
+                    return;
+                }
+            }
+        }
     }
 
     static void end() {
